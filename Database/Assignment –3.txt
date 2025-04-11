@@ -1,0 +1,9 @@
+                         Assignment –3
+                        Overview of SQL.
+-------------------------------------------------------------------------
+1) Does ANSI recognize the data type DATE?
+Ans: ANSI (American National Standards Institute) sets standards to ensure consistency across SQL databases. The DATE data type is recognized because storing and handling dates is a fundamental need in almost every database system — whether it’s for tracking transactions, recording user activity, or logging events. By standardizing DATE, ANSI helps ensure that SQL code is portable and compatible across different database systems.
+
+-------------------------------------------------------------------------
+2) Which subdivision of SQL is used to insert values in tables?
+Ans:- The Data Manipulation Language (DML) subdivision of SQL is used to insert values into tables
