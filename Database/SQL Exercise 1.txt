@@ -1,0 +1,41 @@
+                         SQL Exercise 1 
+
+'1995-01-15' or '95-01-15'
+why is 1970 the cut-off year?
+Ans:- unix os was launched in 1970
+      1970 is known as the year of epoch()
+
+
+1) Display all the data from the S table.
+Asw:- SELECT * FROM S;
+
+2) Display only the S# and SNAME fields from the S table 
+Ans :- SELECT `S#`, Sname FROM S;
+
+3) Display the PNAME and COLOR from the P table for the CITY=”London”. 
+Ans:  SELECT PNAME, COLOR FROM P WHERE CITY='LONDON';
+
+4) Display all the Suppliers from London. 
+ANS :- SELECT * FROM S WHERE CITY='LONDON';
+
+5) Display all the Projects in Athens. 
+Ans:- SELECT * FROM J WHERE City = 'Athens';
+
+6) Display all the Suppliers from Paris or Athens
+Ans:-  select * from s where city='paris' or city ='Athens';
+
+7) Display all the Partnames with the weight between       12 and 14 (inclusive of both). 
+Ans:- select pname from p where weight between 12 and 14;
+
+8) Display all the Suppliers with a Status greater than or equal to 20.
+Ans- select * from s where status >= 20;
+
+9)Display all the Suppliers except the Suppliers from London. 
+Ans:- select * from s where city != 'london';
+
+10)  Display only the Cities from where the Suppliers come from. 
+Ans:- SELECT DISTINCT City FROM S;
+
+11) Assuming that the Part Weight is in GRAMS, display the same in MILLIGRAMS and KILOGRAMS. 
+Ans:- select pname, weight 1000 "Milligram", weigth 1000 / 1000 "Killogram" from p;
+
