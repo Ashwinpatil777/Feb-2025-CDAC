@@ -1,0 +1,48 @@
+                   SQL Exercise 6
+1. Display all the Suppliers with the same Status as the supplier, ‘CLARK’.
+Ans :- select * from s
+    -> where status =(select status froms where sname='CLARK');
+
+2. Display all the Employees in the same department as the employee ‘MILLER’.
+Ans :- select * from emp 
+       where dept =(select dept from emp where ename='MILLER');
+
+3. Display all the Parts which have more Weight than all the Red parts.
+Ans:- select * from p 
+      where weight > ALL 
+      (select weight from p where color ='RED');
+
+4. Display all the Projects going on in the same city as the project ‘TAPE’.
+Ans:- select * from j 
+      where city = 
+      (select city from j where city='TAPE');
+
+5. Display all the Parts with Weight less than all the Green parts.
+Ans :- select * from p 
+        where weight < 
+        ( select weight from p where color='green');
+
+6. Display the name of the Supplier who has sold the maximum Quantity (in onesale).
+Ans:- select sname from s
+      where s# =(select s# from spj order by qty desc limit 1);
+
+7. Display the name of the Employee with the minimum Salary.
+Ans:- select ename from emp 
+      where sal=(select min(sal) from emp);
+
+8. Display the name of the Supplier who has sold the maximum overall Quantity (sum of Sales).
+Ans:- select s.sname from s 
+      join spj on s.`s#` =spj.`s#`
+      group by s.`s#`,s.name
+      order by sum(qty) desc;
+
+9. Display the name of the Department with the maximum number of Employees.
+ANS SELECT DNAME
+    FROM DEPT
+    WHERE DEPTNO = (
+    SELECT DEPTNO
+    FROM EMP
+    GROUP BY DEPTNO
+    ORDER BY COUNT(*) DESC
+);
+ 
