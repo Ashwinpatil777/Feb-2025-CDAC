@@ -1,0 +1,23 @@
+Assignment - 21
+Grant and Revoke.
+1) Give Amit the right to change the ratings of the customers
+Ans:- GRANT UPDATE ON Customers TO    'Amit'@'localhost';
+FLUSH PRIVILEGES;
+
+2) Give Manoj the right to give other users the right to query the Orders table.
+Ans :- 
+GRANT SELECT ON Orders TO 'Manoj'@'hostname' WITH GRANT OPTION;
+3) Take the INSERT privilege on Salespeople away from Ajita
+Ans-REVOKE INSERT ON Salespeople FROM 'Ajita'@'hostname';
+
+4) Grant Abhijeet the right to insert or update the Customers table while keeping her possible rating values in the range of 100 to 500.
+Ans :- GRANT INSERT, UPDATE ON Customers TO 'Abhijeet'@'hostname';
+
+5) Allow Vikram to query the Customers table, but restrict his access to those customers whose rating is the lowest.
+Ans:- CREATE VIEW L_Customers AS
+      SELECT * FROM Customers
+      WHERE rating = (SELECT MIN(rating) FROM Customers);
+
+
+GRANT SELECT ON L_Customers TO 'Vikram'@'hostname';
+
