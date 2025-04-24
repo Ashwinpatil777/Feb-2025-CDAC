@@ -1,0 +1,110 @@
+*{
+    font-family: "Raleway", sans-serif;
+   
+    margin: 0;
+    padding: 0;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #0072ff;
+    color: white;
+}
+
+#contaner-outer{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #00c6ff, #0072ff, pink);
+    border-radius: 20px;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.contaner-first{
+   background-color: rgb(255, 255, 255);
+   width: 30%;
+   height: 500px;
+    
+}
+.contaner-first {
+ text-align: center;
+ border-top-left-radius: 60px;
+ border-bottom-left-radius: 60px;
+}
+
+.contaner-first h1 {
+    margin-top: 25px;
+   }
+
+   .contaner-first p {
+    margin-top: 25px;
+   }
+
+   input{
+    margin: 20px ;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    
+    
+   }
+
+   .form-filed{
+    border-top-width: 0;
+    border-left-width: 0;
+    border-Right-width: 0;
+    border-radius: 3px;
+   }
+
+   button{
+    margin-top: 20px;
+    padding: 5px 25px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(18, 159, 229);
+    color: rgb(5, 5, 5);
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+   }
+   .contaner-second{
+    
+    background-color: rgb(10, 195, 189);
+    width: 30%;
+    text-align: center;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    
+   }
+
+   .contaner-second h1{
+    margin-top:180px;
+   }
+
+   .contaner-second p{
+    margin-top: 40px;
+   }
+   button{
+    margin-top: 40px;
+   }
+   button:hover{
+    color: rgb(255, 255, 255);
+    background-color: #00c6ff;
+   }
+   

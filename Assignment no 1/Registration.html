@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="Assete/style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <form action="">
+        <h1>Student Registration Form</h1>
+        
+        <div class="form">
+            <label>First Name</label>
+            <input type="text" class="text" placeholder="Enter first name"> 
+        </div>
+        
+        <div class="form">
+            <label>Last Name</label>
+            <input type="text" class="text" placeholder="Enter last name">
+        </div>
+        
+        <div class="form">
+            <label>Email</label>
+            <input type="text" class="text" placeholder="Enter Email">
+        </div>
+        <div class="form">
+            <label>Date of Birth</label>
+            <input type="date">
+        </div>
+        
+        <div class="form">
+            <label>Mobile Number</label>
+            <input type="text"  class="text" placeholder="Enter mobile number">
+        </div>
+
+        <div class="form">
+            <label>Gender</label>
+            <div class="radio">
+                <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+                <input type="radio" name="gender" id="female"> <label for="female">Female</label>
+            </div>
+        </div>
+
+        <div class="form">
+            <label>Address</label>
+            <textarea></textarea>
+        </div>
+        
+        <div class="form">
+            <label>City</label>
+            <input type="text" class="text" placeholder="Enter city">
+        </div>
+        
+        <div class="form">
+            <label>Pincode</label>
+            <input type="text" class="text" placeholder="Enter pincode">
+        </div>
+        
+        <div class="form">
+            <label>State</label>
+            <input type="text" class="text" placeholder="Enter state">
+        </div>
+        
+        <div class="form">
+            <label>Country</label>
+            <input type="text" class="text" placeholder="Enter country">
+        </div>
+        
+        <div class="form">
+            <label>Hobbies</label>
+            <div class="checkbox">
+                <input type="checkbox" id="drawing"> <label for="drawing">Drawing</label>
+                <input type="checkbox" id="singing"> <label for="singing">Singing</label>
+                <input type="checkbox" id="dancing"> <label for="dancing">Dancing</label>
+                <input type="checkbox" id="sketching"> <label for="sketching">Sketching</label>
+                <input type="checkbox" id="other"> <label for="other">Other</label>
+                <input type="text" class="text" class="other-input" id="otherText">
+            </div>
+        </div>
+        
+        <div class="form">
+            <label>Qualification</label>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr.no</th>
+                        <th>Examination</th>
+                        <th>Board</th>
+                        <th>Percentage</th>
+                        <th>Year of passing</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Class X</td>
+                        <td><input type="text" class="text1"></td>
+                        <td><input type="text" class="text1"></td>
+                        <td><input type="text" class="text1"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Class XII</td>
+                        <td><input type="text" class="text1"></td>
+                        <td><input type="text" class="text1"></td>
+                        <td><input type="text" class="text1"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Graduation</td>
+                        <td><input type="text" class="text1"></td>
+                        <td><input type="text" class="text1"></td>
+                        <td><input type="text" class="text1"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Master</td>
+                        <td><input type="text" class="text1"></td>
+                        <td><input type="text" class="text1"></td>
+                        <td><input type="text" class="text1"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="form">
+            <label>Courses Applied For</label>
+            <div class="radio">
+                <input type="radio" name="course" id="bca"> <label for="bca">BCA</label>
+                <input type="radio" name="course" id="bcom"> <label for="bcom">B.Com</label>
+                <input type="radio" name="course" id="bsc"> <label for="bsc">B.Sc</label>
+                <input type="radio" name="course" id="ba"> <label for="ba">B.A</label>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
