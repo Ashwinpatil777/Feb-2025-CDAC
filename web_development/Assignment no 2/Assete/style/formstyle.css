@@ -1,0 +1,56 @@
+
+    *{
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: black;
+        border-radius: 20px;
+      
+        
+    }
+
+    .container{
+        width: 60%;
+        margin: 80px auto;
+        border: 2px solid rgb(172, 168, 168);
+        text-align: center;
+        
+        
+    }
+
+    .container h1{
+        margin-top: 20px;
+       font-size: 25px;
+    }
+
+input{
+    
+    margin: 10px;
+    font-size: 17px;
+    font-weight: 400;
+     padding:6px 10px;
+     
+     border-top-width: 0;
+     border-right-width: 0;
+     border-left-width: 0;
+}
+
+.btn{
+    text-align: center; 
+    margin: 0px 20px;
+    
+ }
+ .btn button{
+      background-color: rgb(6, 248, 58);
+      padding: 10px;
+      font-weight:700;
+      border: none;
+      border-radius: 8px;
+       cursor: pointer;
+      transition: 0.5s;
+ }
+
+ .btn button:hover{
+    background-color: rgb(177, 203, 158);
+    color:  rgb(0, 0, 0);
+    padding: 13px 25px;
+}

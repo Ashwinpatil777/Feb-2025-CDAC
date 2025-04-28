@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bold Words Highlight</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        
+        .trigger {
+            color: rgb(41, 41, 206);
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+            margin: 20px 0;
+            padding: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .trigger:hover {
+            background-color: #928b8b;
+        }
+        
+        .content {
+            margin: 20px 0;
+        }
+        
+        .highlight {
+            background-color: #1747e4;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <a href="#" class="trigger" 
+           onmouseover="highlightBoldWords()" 
+           onmouseout="removeHighlight()">
+           On mouse over here bold words of the following paragraph will be highlighted
+        </a>
+    </h1>
+    
+    <div class="content">
+        <p>
+            <b>We</b> have just started <b>this</b> section for the users <b>(beginner</b> to intermediate) who
+            <b>want</b> to work with <b>various</b> JavaScript <b>problems</b> and write scripts online to <b>test</b>
+            their JavaScript <b>skill</b>.
+        </p>
+    </div>
+
+    <script>
+        function highlightBoldWords() {
+            const boldWords = document.querySelectorAll('b');
+            boldWords.forEach(word => {
+                word.classList.add('highlight');
+            });
+        }
+
+        function removeHighlight() {
+            const boldWords = document.querySelectorAll('b');
+            boldWords.forEach(word => {
+                word.classList.remove('highlight');
+            });
+        }
+    </script>
+</body>
+</html>

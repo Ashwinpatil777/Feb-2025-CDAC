@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="assete/style/formstyle.css">
+</head>
+<body>
+  <div class="container">
+    <h1>FORM</h1>
+    <form onsubmit="return data()">
+      <input type="text" id="fname" placeholder="First Name" required>
+      <input type="text" id="lname" placeholder="Last Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <div class="btn">
+        <button type="submit">
+          Submit
+        </button>
+      </div> 
+    </form>
+
+    
+    <div id="output" style="margin-top: 20px;">
+    </div>
+  </div>
+
+  <script>
+    function data() {
+      const firstname = document.getElementById("fname").value;
+      const lastname = document.getElementById("lname").value;
+      const email = document.getElementById("email").value;
+
+      // Create a string to display
+      const displayData = `
+        <h2>Submitted Data:</h2>
+        <p><strong>First Name:</strong> ${firstname}</p>
+        <p><strong>Last Name:</strong> ${lastname}</p>
+        <p><strong>Email:</strong> ${email}</p>
+      `;
+
+      
+      document.getElementById("output").innerHTML = displayData;
+
+      return false; 
+    }
+  </script>
+</body>
+</html>

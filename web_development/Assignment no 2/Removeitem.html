@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove items</title>
+   
+</head>
+<body>
+  <h2>Remove Titem from Dropdown</h2>
+   <select id="dropdown">
+    
+    <option value="ashwin">Ashwin</option>
+    <option value="rohan">Rohan</option>
+    <option value="Abhishek">Abhishek</option>
+    <option value="himanshu">Himanshu</option>
+    <option value="raj">Raj</option>
+   </select>
+
+   <button onclick="removeItem()"> Remove Selected Item</button>
+
+    <p id="message" style="color: green; font-weight: bold; margin-top: 20px;" ></p>
+   <script>
+    function removeItem(){
+        const dropdown = document.getElementById("dropdown");
+        const message=  document.getElementById("message");
+        const removedItem = dropdown.options[dropdown.selectedIndex].text;
+        dropdown.remove(dropdown.selectedIndex);
+        message.textContent = `"${removedItem}" removed successfully!`;
+    }
+   </script>
+    
+</body>
+</html>

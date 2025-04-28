@@ -1,0 +1,46 @@
+*{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+  
+    
+}
+.contaner{
+   
+    
+    text-align: justify;
+    width: 50%;
+    height: auto;
+    margin: 70px auto;
+     border-radius: 20px;
+     background-color: rgb(249 249 249);
+}
+.contaner h1{
+    text-align: center;
+    margin-bottom: 50px; 
+    font-size: 20px;
+}
+.contaner p{
+    
+   margin: 40px 20px; 
+    font-size: 20px;
+}
+.btn{
+   text-align: center; 
+   margin: 0px 20px;
+   
+}
+.btn button{
+    background-color: rgb(6, 248, 58);
+     padding: 10px;
+     font-weight:700;
+     border: none;
+     border-radius: 8px;
+      cursor: pointer;
+     transition: 0.5s;
+}
+.btn button:hover{
+    background-color: rgb(177, 203, 158);
+    color:  rgb(0, 0, 0);
+    padding: 13px 25px;
+}
