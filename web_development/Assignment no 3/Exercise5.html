@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function fetchData(url, callback) {
+            setTimeout(() => {
+              const shouldFail = Math.random() > 0.5;  
+              if (shouldFail) {
+                callback(null, "Error: Failed to fetch data");
+              } else {
+                const response = `Response from ${url}: Success!`;
+                callback(response, null);
+              }
+            }, 2000);
+          }
+          
+          function processData(data, callback) {
+            setTimeout(() => {
+              const processedData = `${data} (Processed)`;
+              callback(processedData, null);
+            }, 1000);
+          }
+          
+          
+          fetchData("https://#", (response, error) => {
+            if (error) {
+              console.error(error);
+            } else {
+              console.log("Fetched:", response);
+              processData(response, (processedData, processError) => {
+                if (processError) {
+                  console.error(processError);
+                } else {
+                  console.log("Processed:", processedData);
+                }
+              });
+            }
+          });
+    </script>
+    
+</body>
+</html>
